@@ -4,8 +4,6 @@ local _domains = {
 	"www.soundsphere.xyz",
 	"download.soundsphere.xyz",
 	"dl.soundsphere.xyz",
-	"test.soundsphere.xyz",
-	"server.soundsphere.xyz",
 }
 
 local domains = {}
