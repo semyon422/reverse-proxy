@@ -1,0 +1,5 @@
+#!/bin/bash
+. ./setenv
+LUA_PATH="$LUA_PATH;$(lua -e "print(package.path)")"
+LUA_CPATH="$LUA_CPATH;$(lua -e "print(package.cpath)")"
+$LUAROCKS install lua-resty-auto-ssl
