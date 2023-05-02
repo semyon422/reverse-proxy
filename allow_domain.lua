@@ -1,5 +1,11 @@
 local _domains = {
 	"dfjk.ru",
+	"soundsphere.xyz",
+	"www.soundsphere.xyz",
+	"download.soundsphere.xyz",
+	"dl.soundsphere.xyz",
+	"test.soundsphere.xyz",
+	"server.soundsphere.xyz",
 }
 
 local domains = {}
