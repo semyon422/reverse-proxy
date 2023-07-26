@@ -1,4 +1,0 @@
-#!/bin/bash
-cd "$(dirname "$0")"
-. ./setenv
-openresty -p $(pwd) -c nginx.conf -g "user $(stat -c %U .);" -s reload
