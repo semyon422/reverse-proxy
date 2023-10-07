@@ -7,6 +7,7 @@ local _domains = {
 	"download.soundsphere.xyz",
 	"dl.soundsphere.xyz",
 	"10key.soundsphere.xyz",
+	"shanghaimoon.ru",
 }
 
 local domains = {}
