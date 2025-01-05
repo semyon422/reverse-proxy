@@ -4,4 +4,4 @@ mkdir -p logs
 mkdir -p temp
 mkdir -p resty-auto-ssl
 . ./setenv
-openresty -p $(pwd) -c nginx_dev.conf -g "user $(stat -c %U .);"
+openresty -p $(pwd) -c nginx.conf -g "user $(stat -c %U .);"

@@ -3,3 +3,4 @@ temp
 tree
 ssl-fallback
 resty-auto-ssl
+config.lua

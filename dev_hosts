@@ -1,0 +1,35 @@
+#!/bin/luajit
+
+local domains = require("domains")
+
+local f = assert(io.open("/etc/hosts", "r"))
+local hosts = f:read("a")
+f:close()
+
+local has_hosts = hosts:find("# <dev>")
+
+if has_hosts then
+    hosts = hosts:gsub("\n# <dev>(.-)# </dev>", "")
+
+    f = assert(io.open("/etc/hosts", "w"))
+    f:write(hosts)
+    f:close()
+
+    print("deleted dev hosts")
+
+    return
+end
+
+local out = {hosts}
+
+table.insert(out, "# <dev>")
+for _, host in ipairs(domains.list) do
+    table.insert(out, ("127.0.0.1 %s"):format(host))
+end
+table.insert(out, "# </dev>")
+
+f = assert(io.open("/etc/hosts", "w"))
+f:write(table.concat(out, "\n"))
+f:close()
+
+print("added dev hosts")

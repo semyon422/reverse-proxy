@@ -1,7 +1,0 @@
-#!/bin/bash
-cd "$(dirname "$0")"
-mkdir -p logs
-mkdir -p temp
-mkdir -p resty-auto-ssl
-. ./setenv
-openresty -p $(pwd) -c nginx_prod.conf -g "user $(stat -c %U .);"
