@@ -13,6 +13,11 @@ domains.list = {
 	"dl.soundsphere.xyz",
 	"10key.soundsphere.xyz",
 
+	"rizu.su",
+	"www.rizu.su",
+	"download.rizu.su",
+	"dl.rizu.su",
+
 	"c.dfjk.ru",
 	"ce.dfjk.ru",
 	"c4.dfjk.ru",
